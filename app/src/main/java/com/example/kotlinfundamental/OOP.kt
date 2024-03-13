@@ -12,30 +12,28 @@ fun main(){
 
     //Class()
     val animal = Animal()
-    val bioFighter1 = """
+    println("""
         Name: ${animal.name}
         Species: ${animal.species}
         Gender: ${animal.gender}
         age: ${animal.age}
         isMamal: ${animal.isMamal}
-    """.trimIndent()
-    print(bioFighter1)
-    println("\n")
+    """.trimIndent())
 
     animal.name = "Jujubee"
     animal.species = "Domestic Short Hair"
     animal.gender = "Female"
     animal.age = 2
     animal.isMamal = true
-
-    val bioFighter2 = """
+    print("""
         Name: ${animal.name}
         Species: ${animal.species}
         Gender: ${animal.gender}
         age: ${animal.age}
         isMamal: ${animal.isMamal}
-    """.trimIndent()
-    print(bioFighter2)
+    """.trimIndent())
+
+
 }
 
 //Object
@@ -65,7 +63,7 @@ class Animal(){
         println("$name using his basic attack!")
     }
 
-    fun rechargePower(){
+    fun rechargePower() {
         println("$name recharge his power!")
     }
 }
